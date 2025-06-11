@@ -12,6 +12,14 @@ class Init
     $this->load_blocks();
     $this->load_settings();
     $this->load_rest_api();
+    $this->load_admin_assets();
+  }
+
+  protected function load_admin_assets()
+  {
+    if (is_admin()) {
+      (new \WPModular\Admin\AdminAssets())->register();
+    }
   }
 
   protected function load_blocks()

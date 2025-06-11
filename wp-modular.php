@@ -1,0 +1,2 @@
+<?php
+// Plugin bootstrap file

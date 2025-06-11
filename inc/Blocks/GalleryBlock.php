@@ -1,0 +1,2 @@
+<?php
+// Gallery Block class

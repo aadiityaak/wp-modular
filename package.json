@@ -1,0 +1,23 @@
+{
+  "name": "wp-modular",
+  "version": "1.0.0",
+  "description": "A modular WordPress plugin with custom blocks and site settings",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "vite build --watch"
+  },
+  "author": "AK",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@wordpress/scripts": "^26.1.0"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^18.0.0",
+    "@wordpress/elements": "^5.0.0",
+    "@wordpress/interactivity": "^2.2.0",
+    "@wordpress/data": "^14.1.0",
+    "@wordpress/components": "^23.1.0"
+  }
+}

@@ -1,0 +1,2 @@
+<?php
+// Option Page class

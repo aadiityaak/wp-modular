@@ -1,0 +1,19 @@
+{
+  "apiVersion": 3,
+  "name": "wp-modular/gallery",
+  "title": "Modular Gallery",
+  "category": "media",
+  "icon": "format-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "images": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "render": "file:./render.php"
+}

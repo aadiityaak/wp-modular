@@ -1,0 +1,12 @@
+{
+  "apiVersion": 3,
+  "name": "wp-modular/views-counter",
+  "title": "Views Counter",
+  "category": "widgets",
+  "icon": "visibility",
+  "editorScript": "file:./view.js",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false
+  }
+}

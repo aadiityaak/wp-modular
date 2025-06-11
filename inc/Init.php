@@ -16,16 +16,15 @@ class Init
 
   protected function load_blocks()
   {
-    if (is_admin()) {
-      // Register Gutenberg blocks (editor)
-      if (file_exists(__DIR__ . '/Blocks/GalleryBlock.php')) {
-        (new Blocks\GalleryBlock)->register();
-      }
-      if (file_exists(__DIR__ . '/Blocks/RelatedPostBlock.php')) {
-        (new Blocks\RelatedPostBlock)->register();
+    foreach (glob(__DIR__ . '/Blocks/*Block.php') as $file) {
+      require_once $file;
+      $class = __NAMESPACE__ . '\\Blocks\\' . basename($file, '.php');
+      if (class_exists($class)) {
+        (new $class)->register();
       }
     }
   }
+
 
   protected function load_settings()
   {
